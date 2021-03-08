@@ -7,7 +7,7 @@ package xerrors_test
 import (
 	"fmt"
 
-	"golang.org/x/xerrors"
+	"golang.org/grudzinski/xerrors"
 )
 
 type MyError2 struct {

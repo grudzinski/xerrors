@@ -9,7 +9,7 @@ import (
 	"os"
 	"testing"
 
-	"golang.org/x/xerrors"
+	"golang.org/grudzinski/xerrors"
 )
 
 func TestIs(t *testing.T) {

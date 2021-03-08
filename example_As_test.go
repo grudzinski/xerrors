@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"os"
 
-	"golang.org/x/xerrors"
+	"golang.org/grudzinski/xerrors"
 )
 
 func ExampleAs() {

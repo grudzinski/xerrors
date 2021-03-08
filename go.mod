@@ -1,3 +1,3 @@
-module golang.org/x/xerrors
+module github.com/grudzinski/xerrors
 
 go 1.11

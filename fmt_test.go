@@ -15,7 +15,7 @@ import (
 	"strings"
 	"testing"
 
-	"golang.org/x/xerrors"
+	"golang.org/grudzinski/xerrors"
 )
 
 func TestErrorf(t *testing.T) {
@@ -159,7 +159,7 @@ func TestErrorFormatter(t *testing.T) {
 		err: framed,
 		fmt: "%+v",
 		want: "something:" +
-			"\n    golang.org/x/xerrors_test.TestErrorFormatter" +
+			"\n    golang.org/grudzinski/xerrors_test.TestErrorFormatter" +
 			"\n        .+/fmt_test.go:101" +
 			"\n    something more",
 		regexp: true,
