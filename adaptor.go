@@ -75,10 +75,16 @@ loop:
 			err = v.FormatError((*printer)(p))
 		case fmt.Formatter:
 			v.Format(p, 'v')
-			break loop
+			err = Unwrap(err)
+			if err == nil {
+				break loop
+			}
 		default:
 			io.WriteString(&p.buf, v.Error())
-			break loop
+			err = Unwrap(err)
+			if err == nil {
+				break loop
+			}
 		}
 		if err == nil {
 			break
